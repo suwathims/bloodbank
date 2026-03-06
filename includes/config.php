@@ -1,14 +1,13 @@
 <?php
-// Start session early so included pages can use sessions
-if (session_status() === PHP_SESSION_NONE) {
-	session_start();
-}
+$host = "mysql.railway.internal";
+$user = "root";
+$password = "kpbcYJsMPHNBpZbIaVZDPIATfthnbSlT";
+$db = "railway";
+$port = "3306";
 
-// Create a mysqli connection and expose it as $conn
-$conn = mysqli_connect("localhost", "root", "", "bloodbank");
-if (!$conn) {
-	// Use a descriptive error for debugging in development
-	die("Database connection failed: " . mysqli_connect_error());
-}
+$conn = mysqli_connect($host,$user,$password,$db,$port);
 
+if(!$conn){
+ die("Database connection failed: ".mysqli_connect_error());
+}
 ?>
