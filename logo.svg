@@ -1,0 +1,44 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blood Drop Shape with Medical Cross -->
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Sparkles -->
+  <g fill="#EF4444">
+    <circle cx="280" cy="80" r="8"/>
+    <circle cx="320" cy="140" r="6"/>
+    <circle cx="540" cy="100" r="7"/>
+    <circle cx="580" cy="160" r="6"/>
+  </g>
+  
+  <!-- Blood Drop -->
+  <g filter="url(#shadow)">
+    <!-- Drop shadow/darker shade -->
+    <ellipse cx="380" cy="260" rx="90" ry="40" fill="#991B1B" opacity="0.3"/>
+    
+    <!-- Main drop -->
+    <path d="M 380 100 C 320 160 280 220 280 260 C 280 320 320 360 380 360 C 440 360 480 320 480 260 C 480 220 440 160 380 100 Z" fill="#EF4444"/>
+    
+    <!-- Drop highlight/shine -->
+    <ellipse cx="340" cy="200" rx="35" ry="50" fill="#FF6B6B" opacity="0.4"/>
+    <ellipse cx="320" cy="180" rx="20" ry="35" fill="white" opacity="0.5"/>
+    
+    <!-- Curved bottom accent -->
+    <path d="M 280 280 Q 330 320 380 330 Q 430 320 480 280" stroke="#FFB3B3" stroke-width="8" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Medical Cross -->
+  <g fill="white">
+    <rect x="350" y="200" width="60" height="120" rx="8"/>
+    <rect x="320" y="230" width="120" height="60" rx="8"/>
+  </g>
+  
+  <!-- Text: BLOOD BANK -->
+  <g font-family="Arial, sans-serif" font-weight="bold">
+    <text x="530" y="220" font-size="72" fill="#DC2626" letter-spacing="2">BLOOD</text>
+    <text x="530" y="310" font-size="72" fill="#4B5563" letter-spacing="2">BANK</text>
+  </g>
+</svg>
