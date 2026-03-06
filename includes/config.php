@@ -3,7 +3,7 @@ $host = "yamabiko.proxy.rlwy.net";
 $user = "root";
 $password = "kpbcYJsMPHNBpZbIaVZDPIATfthnbSlT";
 $db = "railway";
-$port = "3306";
+$port = "52365";
 
 $conn = mysqli_connect($host,$user,$password,$db,$port);
 
