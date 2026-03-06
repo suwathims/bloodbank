@@ -1,5 +1,5 @@
 <?php
-$host = "mysql.railway.internal";
+$host = "yamabiko.proxy.rlwy.net";
 $user = "root";
 $password = "kpbcYJsMPHNBpZbIaVZDPIATfthnbSlT";
 $db = "railway";
